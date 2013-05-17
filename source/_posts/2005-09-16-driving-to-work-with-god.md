@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Driving to Work with God
-category: Personal
+category: Preaching
 tags:
 - Day to Day
 published: true
