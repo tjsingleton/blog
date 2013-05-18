@@ -1,0 +1,32 @@
+<Files .htaccess>
+Order Allow,Deny
+Deny from all
+</Files>
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^feed atom.xml
+RewriteRule ^category(.*)feed category$1atom.xml
+RewriteRule ^category(.*)/page/.* categories$1 [L]
+RewriteRule ^category(.*) categories$1 [L]
+</IfModule>
+
+AddCharset UTF-8 .html
+
+<IfModule mod_deflate.c>
+AddOutputFilterByType DEFLATE text/text text/html text/plain text/xml text/css application/x-javascript application/javascript text/javascript
+</IfModule>
+
+<IfModule mod_expires.c>
+FileETag MTime Size
+
+<FilesMatch "\.(jpg|jpeg|gif|png|css|js)$">
+  ExpiresActive on
+  ExpiresDefault A31536000
+  ExpiresByType text/html M86400
+  ExpiresByType text/css M3628800
+  ExpiresByType text/javascript M3628800
+  ExpiresByType application/x-javascript M3628800
+</FilesMatch>
+</IfModule>
