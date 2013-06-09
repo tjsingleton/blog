@@ -10,6 +10,9 @@ RewriteRule ^feed atom.xml
 RewriteRule ^category(.*)feed category$1atom.xml
 RewriteRule ^category(.*)/page/.* categories$1 [L]
 RewriteRule ^category(.*) categories$1 [L]
+
+RewriteRule ^2010/12/cleaner-git$ 2010/12/cleaner-git-history-stash-rebase-pop [L]
+RewriteRule ^2010/07/optimize-legibility$ 2010/07/optimize-legibility-with-css [L]
 </IfModule>
 
 AddCharset UTF-8 .html
