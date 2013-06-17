@@ -38,7 +38,7 @@ I wrote for it which proved to be [crazy fast](https://gist.github.com/tjsinglet
 ### Demo: IP Geolocation
 
 This is a simple project that allows you to look up geolocation data for an IP address. It uses a database from
-[MaxMind](dev.maxmind.com/geoip/legacy/geolite) which is provided as a binary file. I did not want to check this file
+[MaxMind](http://dev.maxmind.com/geoip/legacy/geolite) which is provided as a binary file. I did not want to check this file
 into git since it would bloat the repository each month as the binary changed. Instead, I packaged it as a
 [gem](http://rubygems.org/gems/geoip-db) which lets me package and deploy it simply.
 
