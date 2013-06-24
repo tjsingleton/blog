@@ -7,7 +7,7 @@ require "stringex"
 ssh_user       = "tjsingleton@tjsingleton.name"
 ssh_port       = "22"
 document_root  = "~/tjsingleton.name/"
-rsync_delete   = false
+rsync_delete   = true
 rsync_args     = ""  # Any extra arguments to pass to rsync
 deploy_default = "rsync"
 
