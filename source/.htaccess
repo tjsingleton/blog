@@ -8,7 +8,7 @@ RewriteEngine On
 RewriteBase /
 
 # remove trailing slash
-RewriteRule ^(.*)\/(\?.*)?$ $1$2 [R=301,L]
+# RewriteRule ^(.*)\/(\?.*)?$ $1$2 [R=301,L]
 
 # changes from wordpress
 RewriteRule ^feed atom.xml
