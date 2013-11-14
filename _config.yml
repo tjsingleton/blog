@@ -97,7 +97,7 @@ disqus_short_name: tjsingleton
 disqus_show_comment_count: false
 
 # Google Analytics
-google_analytics_tracking_id: UA-70985-6
+#google_analytics_tracking_id: UA-70985-6
 
 # Facebook Like
 facebook_like: true
